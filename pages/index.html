@@ -3,10 +3,9 @@
 
 	<section id="wrapper">
 		<header id="header">
-			<h1>{% block title %}{{ block.super }}{% endblock title %}</h1>
+			<h1 class="home">{% block title %}<div class="slotmachine">{{ block.super }}</div>{% endblock title %}</h1>
+			<p class="title">Tony DeVincenzi builds products. He was previously head of product design at Dropbox, design lead for Mailbox, Founder at Sold, and MIT Media Lab alum. <a href="mailto:tonydev@gmail.com">Get in touch.</a></p>
 		</header>
-
-		<a id="docs" href="http://cactusformac.com/redirect/#documentation">Documentation</a>
 
 		<section id="thumbnails" class="clearfix">
 			{% for post in posts %}
@@ -17,13 +16,7 @@
 			{% endfor %}
 		</section>
 
-		{% block footer %}
-			<footer id="footer">
-				<p class="small">A short description.</p>
-			</footer>
-		{% endblock footer %}
 	</section>
 
-	<a href="http://cactusformac.com/?utm_source=templates&utm_medium=badge&utm_campaign=portfolio-template"><img id="badge" class="2x" src="{% static '/images/badge.png' %}"/></a>
-	
+
 {% endblock content %}

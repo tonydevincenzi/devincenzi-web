@@ -1,5 +1,5 @@
 /* Reset */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0} 
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 *, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 /* Clearfix */
@@ -45,16 +45,16 @@ body {
 
 /* Link to Documentation */
 #docs {
-	position: fixed; 
-	top: 8px; 
+	position: fixed;
+	top: 8px;
 	right: 6px;
-	background: #5badf0; 
+	background: #5badf0;
 	color: #fff;
 	padding: 8px 12px;
-	font-size: 13px; 
-	font-weight: bold; 
+	font-size: 13px;
+	font-weight: bold;
 	line-height: 1.35;
-	border-radius: 3px; 
+	border-radius: 3px;
 	z-index: 100;
 }
 
@@ -69,7 +69,28 @@ body {
 }
 
 #header {
-	border-bottom: 1px solid #eee;
+	/*border-bottom: 1px solid #eee;*/
+}
+
+#header h1.home {
+	font-size: 25em;
+	text-align: center;
+	width:100%;
+}
+
+#header h1.home .slotmachine.active {
+		font-size: 180px
+}
+
+
+#header p.title {
+	color:black;
+	font-size: 26px;
+	line-height: 43px;
+}
+
+#header a h1 {
+	font-size: 70px
 }
 
 img {
@@ -134,10 +155,10 @@ img {
 	visibility: visible;
 }
 
-#footer { 
+#footer {
 	box-shadow: inset 0 1px 0 #eee;
 	padding: 40px 0 0 0;
-	margin-top: 100px; 
+	margin-top: 100px;
 	position: relative;
 }
 
@@ -147,18 +168,18 @@ img {
 
 /* Made with Cactus Badge */
 #badge {
-	position: absolute; 
-	bottom: 8px; 
+	position: absolute;
+	bottom: 8px;
 	right: 8px;
-	height: 48px; 
+	height: 48px;
 	width: 48px;
 }
 
 /* Type */
 /* Accent color */
 a	{
-	text-decoration: none; 
-	color: #5694f1;
+	text-decoration: none;
+	color: red;
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: all 0.2s ease;
 	-ms-transition: all 0.2s ease;
@@ -166,12 +187,16 @@ a	{
 	transition: all 0.2s ease;
 }
 
+a:hover {
+	text-decoration: underline;
+}
+
 ul 	{ margin: 0; padding: 0; }
 li	{ list-style-type: circle; list-style-position: inside; }
 
 /* Line Height */
-.post-body, 
-p { 
+.post-body,
+p {
 	line-height:1.7;
 }
 
@@ -199,7 +224,7 @@ h4 {
 	margin-bottom: 6px;
 }
 
-p.small { 
+p.small {
 	color: #bbb;
 	font-size: 14px;
 	line-height: 1.5;
@@ -208,7 +233,7 @@ p.small {
 
 /* Post Page */
 #header {
-	border-bottom: 1px solid #eee;
+	/*border-bottom: 1px solid #eee;*/
 	margin-bottom: 20px;
 }
 
