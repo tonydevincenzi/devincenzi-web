@@ -20,7 +20,7 @@ $(document).ready(function() {
 	{
 		clearTimeout(timer);
 		$('.slotmachine').removeClass("active");
-		$('.slotmachine').html('✌️');
+		$('.slotmachine').html('✌');
 });
 
 	function rotateSymbols() {

@@ -479,14 +479,13 @@ p.small {
   }
   .slotmachine {
     font-family: 'AppleColorEmoji';
-    font-size: 150px;
-    -webkit-transform: scale(5); position: absolute;
+    -webkit-transform: scale(4); position: absolute;
     margin-left:38%;
   }
   .title {
     font-size:20px !important;
     line-height: 33px !important;
-
+    margin-top:40px;
   }
 	#wrapper { padding: 20px 20px 40px 20px; }
 	.post { margin-bottom: 40px; }

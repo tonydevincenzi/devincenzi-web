@@ -147,13 +147,14 @@ body {
 
 #header h1.home {
 	/*font-size: 25em;*/
-  font-size: 150px;
+  font-size: 200px;
 	text-align: center;
   margin:50px 0 100px 0;
 	width:100%;
 }
 
 #header h1.home .slotmachine.active {
+  font-size: 150px;
 }
 
 
@@ -163,6 +164,7 @@ body {
 	color:black;
 	font-size: 24px;
 	line-height: 42px;
+
 }
 
 #header a h1 {
@@ -183,6 +185,7 @@ img {
 #thumbnails {
 	margin: 0 auto;
 	margin-top: 60px;
+  margin-bottom:60px;
 	text-align: center;
 }
 
@@ -476,14 +479,13 @@ p.small {
   }
   .slotmachine {
     font-family: 'AppleColorEmoji';
-    font-size: 200px;
-    -webkit-transform: scale(5); position: absolute;
+    -webkit-transform: scale(4); position: absolute;
     margin-left:38%;
   }
   .title {
     font-size:20px !important;
     line-height: 33px !important;
-
+    margin-top:40px;
   }
 	#wrapper { padding: 20px 20px 40px 20px; }
 	.post { margin-bottom: 40px; }
