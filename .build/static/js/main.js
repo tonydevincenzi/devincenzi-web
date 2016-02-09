@@ -5,8 +5,12 @@ $(document).ready(function() {
     "👊",
 		"👏",
 		"👆",
-		"👋"
+		"👋",
+		"🖕",
+
 	];
+
+	var arrayLocation = 0;
 
 	$('p > img').unwrap();
 	$('.slotmachine').hover(function() {
@@ -20,7 +24,13 @@ $(document).ready(function() {
 });
 
 	function rotateSymbols() {
-		$('.slotmachine').html(symbols[Math.round(Math.random()*5)])
+		if(arrayLocation < symbols.length)
+			arrayLocation++
+		else {
+			arrayLocation = 0;
+		}
+
+		$('.slotmachine').html(symbols[arrayLocation])
 		timer = setTimeout(
   		function()
   		{

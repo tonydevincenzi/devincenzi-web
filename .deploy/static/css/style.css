@@ -1,7 +1,95 @@
 /* Reset */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0} 
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 *, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+@font-face {
+    font-family: 'AtlasGrotesk';
+    src: url('/static/fonts/AtlasGrotesk-Thin-Web.woff2') format('woff2'), url('/static/fonts/AtlasGrotesk-Thin-Web.woff') format('woff'), url('/static/fonts/AtlasGrotesk-Thin-Web.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'AtlasGrotesk';
+    src: url('/static/fonts/AtlasGrotesk-ThinItalic-Web.woff2') format('woff2'), url('/static/fonts/AtlasGrotesk-ThinItalic-Web.woff') format('woff'), url('/static/fonts/AtlasGrotesk-ThinItalic-Web.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'AtlasGrotesk';
+    src: url('/static/fonts/AtlasGrotesk-Light-Web.woff2') format('woff2'), url('/static/fonts/AtlasGrotesk-Light-Web.woff') format('woff'), url('/static/fonts/AtlasGrotesk-Light-Web.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'AtlasGrotesk';
+    src: url('/static/fonts/AtlasGrotesk-LightItalic-Web.woff2') format('woff2'), url('/static/fonts/AtlasGrotesk-LightItalic-Web.woff') format('woff'), url('/static/fonts/AtlasGrotesk-LightItalic-Web.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'AtlasGrotesk';
+    src: url('/static/fonts/AtlasGrotesk-Regular-Web.woff2') format('woff2'), url('/static/fonts/AtlasGrotesk-Regular-Web.woff') format('woff'), url('/static/fonts/AtlasGrotesk-Regular-Web.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'AtlasGrotesk';
+    src: url('/static/fonts/AtlasGrotesk-RegularItalic-Web.woff2') format('woff2'), url('/static/fonts/AtlasGrotesk-RegularItalic-Web.woff') format('woff'), url('/static/fonts/AtlasGrotesk-RegularItalic-Web.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'AtlasGrotesk';
+    src: url('/static/fonts/AtlasGrotesk-Medium-Web.woff2') format('woff2'), url('/static/fonts/AtlasGrotesk-Medium-Web.woff') format('woff'), url('/static/fonts/AtlasGrotesk-Medium-Web.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'AtlasGrotesk';
+    src: url('/static/fonts/AtlasGrotesk-MediumItalic-Web.woff2') format('woff2'), url('/static/fonts/AtlasGrotesk-MediumItalic-Web.woff') format('woff'), url('/static/fonts/AtlasGrotesk-MediumItalic-Web.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'AtlasGrotesk';
+    src: url('/static/fonts/AtlasGrotesk-Bold-Web.woff2') format('woff2'), url('/static/fonts/AtlasGrotesk-Bold-Web.woff') format('woff'), url('/static/fonts/AtlasGrotesk-Bold-Web.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'AtlasGrotesk';
+    src: url('/static/fonts/AtlasGrotesk-BoldItalic-Web.woff2') format('woff2'), url('/static/fonts/AtlasGrotesk-BoldItalic-Web.woff') format('woff'), url('/static/fonts/AtlasGrotesk-BoldItalic-Web.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'AtlasGrotesk';
+    src: url('/static/fonts/AtlasGrotesk-Black-Web.woff2') format('woff2'), url('/static/fonts/AtlasGrotesk-Black-Web.woff') format('woff'), url('/static/fonts/AtlasGrotesk-Black-Web.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'AtlasGrotesk';
+    src: url('/static/fonts/AtlasGrotesk-BlackItalic-Web.woff2') format('woff2'), url('/static/fonts/AtlasGrotesk-BlackItalic-Web.woff') format('woff'), url('/static/fonts/AtlasGrotesk-BlackItalic-Web.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic
+}
+
+.sold-video {
+  margin-top:150px;
+  margin-bottom:55px;
+}
 /* Clearfix */
 .clearfix:after {
 	content: "";
@@ -43,25 +131,10 @@ body {
 	position: relative;
 }
 
-/* Link to Documentation */
-#docs {
-	position: fixed; 
-	top: 8px; 
-	right: 6px;
-	background: #5badf0; 
-	color: #fff;
-	padding: 8px 12px;
-	font-size: 13px; 
-	font-weight: bold; 
-	line-height: 1.35;
-	border-radius: 3px; 
-	z-index: 100;
-}
-
 #wrapper {
 	max-width: 880px;
 	margin: 0 auto;
-	padding: 100px 40px 100px 40px;
+	padding: 30px 0px 0px 0px;
 }
 
 #wrapper.post {
@@ -69,11 +142,42 @@ body {
 }
 
 #header {
-	border-bottom: 1px solid #eee;
+	/*border-bottom: 1px solid #eee;*/
+}
+
+#header h1.home {
+	/*font-size: 25em;*/
+  font-size: 150px;
+	text-align: center;
+  margin:50px 0 100px 0;
+	width:100%;
+}
+
+#header h1.home .slotmachine.active {
+}
+
+
+#header p.title {
+	font-family: 'AtlasGrotesk';
+	letter-spacing: -1px;
+	color:black;
+	font-size: 24px;
+	line-height: 42px;
+}
+
+#header a h1 {
+	font-size: 70px
 }
 
 img {
 	max-width: 100%;
+}
+
+.featured {
+  border-top:1px solid rgba(0,0,0,.1);
+  margin:0px !important;
+  margin-top:20px !important;
+  padding:0px;
 }
 
 #thumbnails {
@@ -116,6 +220,11 @@ img {
 	height: auto;
 }
 
+#thumbnails img {
+  border:1px solid #D9D9D9;
+  cursor:zoom-in;
+}
+
 #thumbnails a span {
 	color: #999;
 	display: inline-block;
@@ -134,10 +243,10 @@ img {
 	visibility: visible;
 }
 
-#footer { 
+#footer {
 	box-shadow: inset 0 1px 0 #eee;
 	padding: 40px 0 0 0;
-	margin-top: 100px; 
+	margin-top: 100px;
 	position: relative;
 }
 
@@ -147,18 +256,18 @@ img {
 
 /* Made with Cactus Badge */
 #badge {
-	position: absolute; 
-	bottom: 8px; 
+	position: absolute;
+	bottom: 8px;
 	right: 8px;
-	height: 48px; 
+	height: 48px;
 	width: 48px;
 }
 
 /* Type */
 /* Accent color */
 a	{
-	text-decoration: none; 
-	color: #5694f1;
+	text-decoration: none;
+	color: red;
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: all 0.2s ease;
 	-ms-transition: all 0.2s ease;
@@ -166,13 +275,40 @@ a	{
 	transition: all 0.2s ease;
 }
 
+a:hover {
+	text-decoration: underline;
+}
+
 ul 	{ margin: 0; padding: 0; }
 li	{ list-style-type: circle; list-style-position: inside; }
 
 /* Line Height */
-.post-body, 
-p { 
-	line-height:1.7;
+.post-content{
+  margin-top:100px;
+}
+.post-body,
+p {
+  font-family: 'AtlasGrotesk';
+  letter-spacing: -.2px;
+  color:black;
+  font-size: 21px;
+  line-height: 32px;
+  margin:0px;
+}
+
+.project-header {
+  font-size:50px;
+  font-weight: bold;
+  color:red;
+  margin-bottom:50px;
+}
+
+.project-content {
+  padding-top:10px;
+}
+
+p.press {
+  font-weight: bold;
 }
 
 h1 {
@@ -182,7 +318,6 @@ h1 {
 	font-weight: 500;
 	font-size: 19px;
 	margin: 0;
-	padding-bottom: 20px;
 }
 
 h3 {
@@ -199,7 +334,7 @@ h4 {
 	margin-bottom: 6px;
 }
 
-p.small { 
+p.small {
 	color: #bbb;
 	font-size: 14px;
 	line-height: 1.5;
@@ -208,8 +343,14 @@ p.small {
 
 /* Post Page */
 #header {
-	border-bottom: 1px solid #eee;
-	margin-bottom: 20px;
+	/*border-bottom: 1px solid #eee;*/
+	margin-bottom: 0px;
+  margin:0px;
+  padding:0px;
+}
+
+#header a h1 {
+  font-size: 60px;
 }
 
 .post {
@@ -232,7 +373,7 @@ p.small {
 
 #post-meta div span {
 	color: #aaa;
-	font-weight:5 00;
+	font-weight:500;
 	display: block;
 	margin-bottom: 2px;
 }
@@ -266,7 +407,6 @@ p.small {
 
 /* Post Navigation */
 #post-nav {
-	border-top: 1px solid #eee;
 	text-align: center;
 	padding-top: 20px;
 	font-size: 13px;
@@ -330,7 +470,21 @@ p.small {
 
 	a#docs { display: none; }
 	#thumbnails a:first-child { margin-top: 0; }
-	#header { text-align: center; margin-bottom: 0; }
+	#header {
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .slotmachine {
+    font-family: 'AppleColorEmoji';
+    font-size: 200px;
+    -webkit-transform: scale(5); position: absolute;
+    margin-left:38%;
+  }
+  .title {
+    font-size:20px !important;
+    line-height: 33px !important;
+
+  }
 	#wrapper { padding: 20px 20px 40px 20px; }
 	.post { margin-bottom: 40px; }
 	#footer { text-align: center; padding-bottom: 15px; }
