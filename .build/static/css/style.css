@@ -491,3 +491,42 @@ p.small {
 	.post { margin-bottom: 40px; }
 	#footer { text-align: center; padding-bottom: 15px; }
 }
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    #header {
+
+    }
+    .slotmachine {
+      font-family: 'AppleColorEmoji';
+      -webkit-transform: scale(3); position: absolute;
+      margin-left:42%;
+      margin-bottom:50px;
+
+    }
+    body {
+      margin-left:50px;
+      margin-left:50px;
+    }
+
+}
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .slotmachine {
+      font-family: 'AppleColorEmoji';
+      -webkit-transform: scale(4); position: absolute;
+      margin-left:42%;
+    }
+    body {
+      margin-left:50px;
+      margin-left:50px;
+    }
+}
